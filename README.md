@@ -1,3 +1,12 @@
+<h1 align="center">
+	<br>
+	<br>
+	<img width="320" src="media/logo.png" alt="Febis">
+	<br>
+	<br>
+	<br>
+</h1>
+
 # Febis is a tool for front-end development
 
 ## Febis 前端集成工具
