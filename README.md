@@ -7,7 +7,7 @@
 	<br>
 </h1>
 
-# Febis is a tool for front-end development
+># Febis is a tool for front-end development
 
 ## Febis 前端集成工具
 - 1.安装
