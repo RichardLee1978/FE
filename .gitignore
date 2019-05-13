@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 .DS_Stor
 package-lock.json
+deploy.json

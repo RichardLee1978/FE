@@ -1,6 +1,6 @@
 const program = require('commander')
 const chalk = require('chalk')
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
 const slash = require('slash')
 const semver = require('semver')
@@ -44,8 +44,25 @@ exports.init =async (process) => {
             }
             console.log(chalk.yellow(' widget: '+JSON.stringify(name)+"\n options"+JSON.stringify(options)));
         });
-        program.parse(process.argv);
 
+        program
+            .command('deploy [folder-name]')
+            .action((name,cmd)=> {
+                const cwd = process.cwd()
+                const targetDir = path.resolve(cwd, name || '.')
+                //console.log(path.resolve(targetDir));
+                if(!name) {
+                   
+                   require('./lib/rsync')(targetDir+'/dist/',path.resolve(cwd,'deploy.json'));
+                } else {
+                    
+                    require('./lib/rsync')(targetDir+'/',path.resolve(cwd,'deploy.json'));
+                }
+            });
+
+
+        program.parse(process.argv);
+        
     /**
      * 小写转换为大写
      * @param {*} str 

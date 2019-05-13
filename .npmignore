@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 .git
 npm-debug.log
+deploy.json
+package-lock.json
