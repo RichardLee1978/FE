@@ -1,7 +1,7 @@
 <h1 align="center">
 	<br>
 	<br>
-	<img width="320" src="media/logo.png" alt="Febis">
+	<img width="278" src="media/logo.png" alt="Febis">
 	<br>
 	<br>
 	<br>
