@@ -9,7 +9,7 @@
 
 ># Febis is a tool for front-end development
 
-## Febis 前端集成工具
+>## Febis 前端集成工具
 - 1.安装
 ```
 npm install -g febis
