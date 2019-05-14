@@ -58,5 +58,5 @@ foldername 表示需要拷贝到远程主机的文件夹名字
    cd 到需要部署到远程主机的文件夹或者在命令后输入foldername
 ```
 febis deploy-config [foldername]
-foldername 表示需要拷贝到远程主机的文件夹名字
+foldername 表示需要修改部署配置文件的项目文件夹名字，为空表示修改当前文件夹的配置文件
 ```
