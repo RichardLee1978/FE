@@ -1,6 +1,6 @@
 {
   "name": "febis",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "fe is a tool for front-end Development.",
   "main": "index.js",
   "scripts": {
