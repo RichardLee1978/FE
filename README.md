@@ -53,3 +53,10 @@ febis create projectname -v
 febis deploy [foldername]
 foldername 表示需要拷贝到远程主机的文件夹名字
 ```
+- 5.修改部署文件
+
+   cd 到需要部署到远程主机的文件夹或者在命令后输入foldername
+```
+febis deploy-config [foldername]
+foldername 表示需要拷贝到远程主机的文件夹名字
+```

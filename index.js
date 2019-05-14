@@ -59,7 +59,19 @@ exports.init =async (process) => {
                     require('./lib/rsync')(targetDir+'/',path.resolve(cwd,'deploy.json'));
                 }
             });
+            program
+            .command('deploy-config [folder-name]')
+            .action((name,cmd)=> {
+                const options = cleanArgs(cmd);
+                const cwd = process.cwd()
+                const targetDir = path.resolve(cwd, name || '.')
+                //console.log(path.resolve(targetDir));
+                const wirte = require('./lib/writeFile');
 
+                wirte.writeDeployJson(targetDir,options);
+                  
+                
+            });
 
         program.parse(process.argv);
         
